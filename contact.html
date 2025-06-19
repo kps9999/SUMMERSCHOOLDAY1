@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+    <link rel="icon" type image/png href="./Screenshot 2025-06-19 100412.png">
+</head>
+<body>
+
+  <h1>Contact Me</h1>
+  <p>
+    <a href="portfolio.html">Home</a> |
+    <a href="about.html">About</a>
+  </p>
+  <form action="" method="get">
+
+    <div>
+      <label for="name">Enter your name:</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="email">Enter your email:</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <label for="phone">Enter your phone number:</label>
+      <input type="tel" name="phone" id="phone" required>
+    </div>
+
+    <div >
+      <label for="message">Your message:</label><br>
+      <textarea name="message" id="message" rows="4" cols="30" required></textarea>
+    </div>
+    <div>
+      <label for="topic">Select your query topic:</label>
+      <select id="topic" name="topic">
+        <option value="">Please choose an option</option>
+        <option value="website">Website</option>
+        <option value="project">Project</option>
+        <option value="other">other</option>
+      </select>
+    </div>
+    <div>
+      <label for="date">Preferred Contact Date:</label><br>
+      <input type="date" name="date" id="date" required>
+    </div>
+    <div>
+      <label for="urgency">Urgency Level (1 = Low, 5 = High):</label><br>
+      <input type="range" name="urgency" id="urgency" min="1" max="5">
+    </div>
+    <div >
+      <p>Preferred Contact Method:</p>
+      <input type="checkbox" name="contactMethod" value="Email" id="methodEmail">
+      <label for="methodEmail">Email</label>
+      <input type="checkbox" name="contactMethod" value="Phone" id="methodPhone">
+      <label for="methodPhone">Phone</label>
+      <input type="checkbox" name="contactMethod" value="Text" id="methodText">
+      <label for="methodText">Text</label>
+    </div>
+    <div >
+      <p>Inquiry Type:</p>
+      <input type="radio" name="inquiry" value="General" id="general" required>
+      <label for="general">General</label>
+      <input type="radio" name="inquiry" value="Business" id="business">
+      <label for="business">Business</label>
+      <input type="radio" name="inquiry" value="Support" id="support">
+      <label for="support">Support</label>
+    </div>
+    <div >
+      <input type="submit" value="Submit">
+    </div>
+
+  </form>
+
+</body>
+</html>
+
+
